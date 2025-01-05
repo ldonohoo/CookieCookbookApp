@@ -1,0 +1,14 @@
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/bin/Debug/net9.0/CookieCookbookApp
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/bin/Debug/net9.0/CookieCookbookApp.deps.json
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/bin/Debug/net9.0/CookieCookbookApp.runtimeconfig.json
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/bin/Debug/net9.0/CookieCookbookApp.dll
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/bin/Debug/net9.0/CookieCookbookApp.pdb
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.AssemblyInfoInputs.cache
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.AssemblyInfo.cs
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.csproj.CoreCompileInputs.cache
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.dll
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/refint/CookieCookbookApp.dll
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.pdb
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.genruntimeconfig.cache
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/ref/CookieCookbookApp.dll
