@@ -1,5 +1,8 @@
+using System.Data.Common;
+
 using CookieCookbookApp.Recipes;
 using CookieCookbookApp.Recipes.Ingredients;
+using CookieCookbookApp.RecipesRepository;
 
 namespace CookieCookbookApp.RecipesUserInteraction;
 
@@ -29,6 +32,7 @@ public class RecipesConsoleUserInteraction : IRecipesUserInteraction
     {
         if (allRecipes.Count() > 0)
         {
+            ShowMessage($"{Environment.NewLine}Current recipes:{Environment.NewLine}");
             var count = 1;
             foreach (Recipe recipe in allRecipes)
             {
@@ -36,6 +40,7 @@ public class RecipesConsoleUserInteraction : IRecipesUserInteraction
                 ShowMessage(recipe.ToString());
                 count++;
             }
+            return;
         }
         ShowMessage("No recipes in cookbook." + Environment.NewLine);
     }
@@ -52,26 +57,26 @@ public class RecipesConsoleUserInteraction : IRecipesUserInteraction
 
     public List<Ingredient> SelectIngredients()
     {
-        private List<Ingredient> currentIngredients = new();
+        List<Ingredient> currentIngredients = new();
         bool hasRecipeEnded = false;
         while (!hasRecipeEnded)
         {
-
-            // ShowMessage("Please select an ingredient number to add, or any other key to save recipe:");
-            // if (int.TryParse(Console.ReadLine(), out int ingredientId))
-            // {
-            //     Ingredient selectedIngredient = _availableIngredients.Find(ingredient => ingredient.Id == ingredientId);   
-            //     if (selectedIngredient is not null)
-            //     {
-            //         currentIngredients.Add(selectedIngredient);
-            //     } else 
-            //     {
-            //         ShowMessage("Ingredient not found.");
-            //     }  
-            // } else 
-            // {
-            //     didUserEndRecipe = true;
-            // }
+            ShowMessage("Please select an ingredient number to add, or any other key to save recipe:");
+            if(int.TryParse(Console.ReadLine(), out int ingredientId))
+            {
+                Ingredient selectedIngredient = _ingredientsRegister.GetById(ingredientId);
+                if(selectedIngredient is not null)
+                {
+                    currentIngredients.Add(selectedIngredient);
+                }
+                else 
+                {
+                    ShowMessage("Ingredient not found.");
+                }  
+            } else 
+            {
+                hasRecipeEnded = true;
+            }
         } 
         return currentIngredients;
     }

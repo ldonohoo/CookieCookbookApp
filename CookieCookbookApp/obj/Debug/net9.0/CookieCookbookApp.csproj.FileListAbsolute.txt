@@ -12,3 +12,4 @@
 /Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.pdb
 /Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.genruntimeconfig.cache
 /Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/ref/CookieCookbookApp.dll
+/Users/lisa/Documents/code/ms/CookieCookbookApp/CookieCookbookApp/obj/Debug/net9.0/CookieCookbookApp.sourcelink.json

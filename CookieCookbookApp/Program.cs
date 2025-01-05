@@ -5,10 +5,13 @@ using CookieCookbookApp;
 using CookieCookbookApp.Recipes;
 using CookieCookbookApp.RecipesRepository;
 using CookieCookbookApp.RecipesUserInteraction;
+using CookieCookbookApp.StringsTextualRepo;
 
 
 var cookiesCookbook = new CookiesCookbook(
-    new RecipesTextRepository(),
+    new RecipesTextRepository(
+        new StringsTextualRepository()
+    ),
     new RecipesConsoleUserInteraction(
         new IngredientsRegister()
     )

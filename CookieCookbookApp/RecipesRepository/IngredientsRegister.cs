@@ -1,7 +1,8 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 using CookieCookbookApp.Recipes.Ingredients;
 
-namespace CookieCookbookApp;
+namespace CookieCookbookApp.RecipesRepository;
 
 public class IngredientsRegister
 {
@@ -16,6 +17,11 @@ public class IngredientsRegister
             new Eggs(),
             new ChocolateChips()
     };
+
+    public Ingredient? GetById(int ingredientId)
+    {
+        return All.SingleOrDefault(ingredient => ingredientId == ingredient.Id);
+    }
 
 }
 
