@@ -1,18 +1,17 @@
-using System.Data.Common;
+
 
 using CookieCookbookApp.Recipes;
 using CookieCookbookApp.Recipes.Ingredients;
-using CookieCookbookApp.RecipesRepository;
-
-namespace CookieCookbookApp.RecipesUserInteraction;
+using CookieCookbookApp.Recipes;
+namespace CookieCookbookApp.App;
 
 public class RecipesConsoleUserInteraction : IRecipesUserInteraction
 {
     // because i need a list of available ingredients, this should be injected through dependeny
     //  injection!! so create a private readonly field and pass the register in!
-    private readonly IngredientsRegister _ingredientsRegister;
+    private readonly IIngredientsRegister _ingredientsRegister;
 
-    public RecipesConsoleUserInteraction(IngredientsRegister ingredientsRegister)
+    public RecipesConsoleUserInteraction(IIngredientsRegister ingredientsRegister)
     {
         _ingredientsRegister = ingredientsRegister;
     }

@@ -2,9 +2,16 @@ using System;
 using System.Security.Cryptography.X509Certificates;
 using CookieCookbookApp.Recipes.Ingredients;
 
-namespace CookieCookbookApp.RecipesRepository;
+namespace CookieCookbookApp;
 
-public class IngredientsRegister
+public interface IIngredientsRegister
+{
+    IEnumerable<Ingredient> All { get; }
+
+    Ingredient? GetById(int ingredientId);
+}
+
+public class IngredientsRegister : IIngredientsRegister
 {
     public IEnumerable<Ingredient> All { get; } = new List<Ingredient>
     {

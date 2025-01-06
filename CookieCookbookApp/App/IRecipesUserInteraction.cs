@@ -1,10 +1,7 @@
-using System;
-
-namespace CookieCookbookApp.RecipesUserInteraction;
-
 using CookieCookbookApp.Recipes;
 using CookieCookbookApp.Recipes.Ingredients;
 
+namespace CookieCookbookApp.App;
 interface IRecipesUserInteraction
 {
     void ShowMessage(string message);
